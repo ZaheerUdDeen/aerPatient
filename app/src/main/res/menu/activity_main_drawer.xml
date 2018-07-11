@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myConsultation"
+            android:icon="@mipmap/mc"
+            android:title="My Consultaions" />
+        <item
+            android:id="@+id/nav_availableDoctors"
+            android:icon="@mipmap/ph"
+            android:title="Available Doctors" />
+        <item
+            android:id="@+id/my_treatment"
+            android:icon="@mipmap/tb"
+            android:title="My Treatment" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/prs"
+            android:title="Prescriptions" />
+
+    </group>
+
+
+</menu>

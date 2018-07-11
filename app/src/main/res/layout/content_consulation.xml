@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="infiniun.aerpatient.Consulation"
+    tools:showIn="@layout/activity_consulation">
+
+    <ImageView
+        android:id="@+id/pp"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/dr1"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:layout_editor_absoluteX="148dp" />
+
+    <TextView
+        android:id="@+id/consultatioID"
+        android:layout_width="248dp"
+        android:layout_height="44dp"
+
+        android:layout_alignEnd="@+id/specilization"
+        android:layout_alignRight="@+id/specilization"
+        android:layout_below="@+id/pp"
+        android:gravity="center"
+        android:hint="Dr Name"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/contactNo"
+        android:layout_width="246dp"
+        android:layout_height="42dp"
+        android:layout_alignLeft="@+id/ratingBar"
+        android:layout_alignStart="@+id/ratingBar"
+        android:layout_below="@+id/consultatioID"
+        android:gravity="center"
+        android:hint="+92343978542" />
+
+    <TextView
+        android:id="@+id/specilization"
+        android:layout_width="249dp"
+        android:layout_height="38dp"
+        android:layout_alignEnd="@+id/contactNo"
+        android:layout_alignRight="@+id/contactNo"
+        android:layout_below="@+id/contactNo"
+        android:gravity="center"
+        android:hint="MBBS,FCPS"
+        android:textStyle="bold" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="249dp"
+        android:layout_height="46dp"
+
+        android:layout_below="@+id/specilization"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_above="@+id/messageInC"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/customborder" />
+
+
+    <EditText
+        android:id="@+id/messageInC"
+        android:layout_width="386dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/startConsultation"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/customborder"
+        android:backgroundTint="@color/base"
+        android:ems="10"
+
+        android:inputType="textMultiLine"
+        android:textSize="32dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/startConsultation"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Start Consultation"
+        android:background="@color/blue"
+         />
+
+</RelativeLayout>

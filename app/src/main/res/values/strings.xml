@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AER-Patient</string>
+    <string name="consultationID">100</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_consulation">Consulation</string>
+    <string name="consultation">100</string>
+</resources>

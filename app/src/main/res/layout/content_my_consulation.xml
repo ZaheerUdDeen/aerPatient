@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="infiniun.aerpatient.MyConsulation"
+    tools:showIn="@layout/activity_my_consulation">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+
+        android:backgroundTint="@color/blue"
+        android:text="Consultation-ID:"
+        android:gravity="center"
+        android:textSize="25dp"
+
+        tools:backgroundTint="@color/blue" />
+    <TextView
+        android:id="@+id/consultationIDMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:hint="Consultation Id"
+        android:textSize="25dp"
+        android:textColor="@color/blue"
+        />
+
+
+    <TextView
+        android:id="@+id/IllnesDecriptionTv"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/consultationIDMC"
+        android:backgroundTint="@color/blue"
+        android:text="Illnes Decription:"
+        android:gravity="center"
+        android:textSize="25dp"
+
+        tools:backgroundTint="@color/blue" />
+    <TextView
+        android:id="@+id/IllnesDecription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/consultationIDMC"
+        android:textColor="@color/blue"
+
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:hint="illness Description"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:id="@+id/messageTV"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/IllnesDecription"
+        android:backgroundTint="@color/blue"
+        android:text="Doctor Message:"
+        android:gravity="center"
+        android:textSize="25dp"
+
+        tools:backgroundTint="@color/blue" />
+    <TextView
+        android:id="@+id/messageInC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/IllnesDecription"
+        android:gravity="center"
+        android:textColor="@color/blue"
+
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:hint="suggestion"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:id="@+id/procedureTV"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_below="@id/messageInC"
+        android:backgroundTint="@color/blue"
+        android:text="Treatment Procedure:"
+        android:gravity="center"
+        android:textSize="25dp"
+
+        tools:backgroundTint="@color/blue" />
+    <TextView
+        android:id="@+id/procedure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messageInC"
+        android:gravity="center"
+        android:textColor="@color/blue"
+
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="25dp"
+        android:hint="Procedure"
+        android:textSize="25dp"
+        />
+
+    <TextView
+
+        android:layout_width="249dp"
+        android:layout_height="35dp"
+        android:id="@+id/drugTview"
+
+        android:layout_below="@+id/procedure"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+
+        android:gravity="center"
+        android:textSize="25dp"
+        android:text="Prescribed Drugs:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drugDetails"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="40dp"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/drugTview"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/shareDrugs"
+        android:layout_width="384dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Order Medicine"
+        android:background="@color/blue"
+        />
+
+</RelativeLayout>
